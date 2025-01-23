@@ -33,7 +33,7 @@ func _on_unit_took_damage(unit: Unit, value: int, _knockback_direction: Vector2,
 	display(text, unit.global_position, color, icon, duration, always_display, direction, need_translate)
 
 func format_damage_text(value: int) -> String :
-	var suffix = ["", "K", "M", "B", "T"]
+	var suffix = ["", "K", "M", "B"]
 	var fvalue = float(value)
 	var p = 0
 	
