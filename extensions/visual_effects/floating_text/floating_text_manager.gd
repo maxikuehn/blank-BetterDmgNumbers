@@ -2,7 +2,7 @@ extends "res://visual_effects/floating_text/floating_text_manager.gd"
 
 const MYMOD_LOG = "blank-BetterDmgNumbers"
 
-func _on_unit_took_damage(unit: Unit, value: int, _knockback_direction: Vector2, _knockback_amount: float, is_crit: bool, is_dodge: bool, is_protected: bool, armor_did_something: bool, _args: TakeDamageArgs, hit_type: int) -> void :
+func _on_unit_took_damage(unit: Unit, value: int, _knockback_direction: Vector2, is_crit: bool, is_dodge: bool, is_protected: bool, armor_did_something: bool, _args: TakeDamageArgs, hit_type: int) -> void :
 	if not ProgressData.settings.damage_display:
 		return
 
@@ -26,7 +26,6 @@ func _on_unit_took_damage(unit: Unit, value: int, _knockback_direction: Vector2,
 		color = Color.yellow
 	elif armor_did_something:
 		color = Color.gray
-
 
 	var icon = null if hit_type == HitType.NORMAL else get_special_hit_icon(hit_type)
 
