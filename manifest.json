@@ -1,7 +1,7 @@
 {
     "name": "BetterDmgNumbers",
     "namespace": "blank",
-    "version_number": "1.0.1",
+    "version_number": "1.1.0",
     "description": "Now with 100% more readable damage numbers!",
     "website_url": "https://github.com/maxikuehn/BetterDmgNumbers",
     "dependencies": [],
